@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Project1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="43" Y="10"/>
+        <UsageCount Value="47"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="identificador"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8"/>
+        <UsageCount Value="47"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="const_real"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="32" Y="3"/>
+        <UsageCount Value="47"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="const_cadena"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18"/>
+        <UsageCount Value="40"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit4.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_especial"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16"/>
+        <UsageCount Value="39"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Unit5"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="25"/>
+        <CursorPos Y="53"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="archivo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="54" Y="29"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\SINTAXIS Y SEMANTICA DE LOS LENGUAJES\TPF\TPF\evaluador.pas"/>
+        <UnitName Value="Evaluador"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="61"/>
+        <CursorPos X="101" Y="94"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\SINTAXIS Y SEMANTICA DE LOS LENGUAJES\TPF\TPF\lista_ts.pas"/>
+        <UnitName Value="lista_TS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="104" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="lista.pas"/>
+        <UnitName Value="Lista"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="148" Y="18"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\OneDrive\Documentos\ALGORITMOS\PROYECTOS\LISTAS\lista.pas"/>
+        <UnitName Value="LISTA"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <CursorPos X="52" Y="112"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\SINTAXIS\PROGRAMAS\archivo.pas"/>
+        <UnitName Value="ARCHIVO"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="id.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="17"/>
+        <CursorPos Y="41"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="const_real.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="23"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="const_cadena.pas"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="28" Y="41"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="s_especial.pas"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="66"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="64" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="67" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="13" Column="63"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="19" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="53" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="54" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="55" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="56" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="66" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="unit5.pas"/>
+        <Caret Line="50" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="unit5.pas"/>
+        <Caret Line="53" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="20"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="21"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="22"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="23"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="25"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="28"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="19" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="53" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="54" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="55" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="56" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="s_especial.pas"/>
+        <Caret Line="66" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="unit5.pas"/>
+        <Caret Line="50" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="unit5.pas"/>
+        <Caret Line="53" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="20"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="21"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="22"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="23"/>
+      </Position>
+      <Position>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="25"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="const_real.pas"/>
+        <Line Value="51"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="s_especial.pas"/>
+        <Line Value="19"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unit5.pas"/>
+        <Line Value="14"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="PRIMERO"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

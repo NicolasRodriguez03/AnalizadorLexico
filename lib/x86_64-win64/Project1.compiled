@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1420791944"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -FiC:\Users\Standard\Documents\AnalizadorLexico-20230605T195037Z-001\AnalizadorLexico\lib\x86_64-win64 -FuC:\Users\Standard\Documents\AnalizadorLexico-20230605T195037Z-001\AnalizadorLexico\ -FUC:\Users\Standard\Documents\AnalizadorLexico-20230605T195037Z-001\AnalizadorLexico\lib\x86_64-win64\ -FEC:\Users\Standard\Documents\AnalizadorLexico-20230605T195037Z-001\AnalizadorLexico\ -oC:\Users\Standard\Documents\AnalizadorLexico-20230605T195037Z-001\AnalizadorLexico\project1.exe Project1.pas"/>
+</CONFIG>

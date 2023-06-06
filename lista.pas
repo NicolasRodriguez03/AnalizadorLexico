@@ -1,0 +1,114 @@
+unit Lista;
+
+interface
+
+uses  SysUtils;
+type
+        T_DATO1=RECORD
+            LEXEMA:STRING;
+            COMPLEX:STRING;
+        end;
+	T_PUNT= ^T_NODO;
+
+	T_NODO= RECORD
+		INFO: T_DATO1;
+		SIG: T_PUNT;
+	END;
+
+	T_LISTA= RECORD
+		CAB,ACT: T_PUNT;
+		TAM: INTEGER;
+	END;
+
+
+            PROCEDURE CREARLISTA (VAR L:T_LISTA);
+            FUNCTION LISTA_LLENA (VAR L:T_LISTA): BOOLEAN;
+            FUNCTION LISTA_VACIA (VAR L:T_LISTA): BOOLEAN;
+            PROCEDURE SIGUIENTE(VAR L:T_LISTA);
+            PROCEDURE PRIMERO (VAR L:T_LISTA);
+            FUNCTION FIN (L:T_LISTA): BOOLEAN;
+            PROCEDURE RECUPERAR (L:T_LISTA; VAR E:T_DATO1);
+            PROCEDURE BUSCAR_L (L:T_LISTA; BUSCADO:STRING;VAR ENC:BOOLEAN);
+            PROCEDURE AGREGAR (VAR L:T_LISTA; X:T_DATO1);
+IMPLEMENTATION
+
+
+    PROCEDURE CREARLISTA (VAR L:T_LISTA);
+    BEGIN
+        L.TAM:=0;
+        L.CAB:=NIL;
+    END;
+
+    FUNCTION LISTA_LLENA (VAR L:T_LISTA): BOOLEAN;
+    BEGIN
+        LISTA_LLENA:= GETHEAPSTATUS.TotalFree < SIZEOF(T_NODO) ;
+    END;
+
+    FUNCTION LISTA_VACIA (VAR L:T_LISTA): BOOLEAN;
+    BEGIN
+        LISTA_VACIA:= L.TAM=0;
+    END;
+
+    PROCEDURE SIGUIENTE(VAR L:T_LISTA);
+    BEGIN
+        L.ACT:= L.ACT^.SIG;
+    END;
+
+    PROCEDURE PRIMERO (VAR L:T_LISTA);
+    BEGIN
+        L.ACT := L.CAB;
+    END;
+
+   FUNCTION FIN (L:T_LISTA): BOOLEAN;
+    BEGIN
+        FIN:= L.ACT = NIL;
+    END;
+
+PROCEDURE AGREGAR (VAR L:T_LISTA; X:T_DATO1);
+    VAR DIR, ANT, ACT: T_PUNT;
+   BEGIN
+    NEW (DIR);
+    DIR^.INFO:= X;
+IF (L.CAB= NIL) OR (L.CAB^.INFO.LEXEMA > X.LEXEMA) THEN
+     BEGIN
+     DIR^.SIG:= L.CAB;
+     L.CAB:=DIR;
+     END
+     ELSE
+     BEGIN
+     ANT:= L.CAB;
+     ACT:= L.CAB^.SIG;
+     WHILE (ACT <> NIL) AND (ACT^.INFO.LEXEMA < X.LEXEMA) DO
+     BEGIN
+     ANT:= ACT;
+     ACT:= ACT^.SIG
+     END;
+     DIR^.SIG:= ACT;
+     ANT^.SIG:= DIR;
+     END;
+    INC(L.TAM)
+    END;
+
+
+    PROCEDURE RECUPERAR (L:T_LISTA; VAR E:T_DATO1);
+    BEGIN
+        E:= L.ACT^.INFO;
+    END;
+
+    PROCEDURE BUSCAR_L(L:T_LISTA; BUSCADO:STRING ;VAR ENC:BOOLEAN);
+    VAR
+        E:T_DATO1;
+    BEGIN
+        PRIMERO(L);
+        WHILE NOT FIN(L) AND (NOT ENC) DO
+        BEGIN
+            RECUPERAR(L,E);
+            IF E.LEXEMA = BUSCADO THEN
+                ENC:=TRUE
+            ELSE
+                SIGUIENTE (L);
+        END;
+    END;
+
+
+end.
