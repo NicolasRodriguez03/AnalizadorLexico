@@ -19,6 +19,7 @@ Var
   EstadoActual:Q;
   Delta:TipoDelta;
   X:CHAR; I:LONGINT;
+  LEXEMA_AUX:STRING;
 Begin
   I:=CONTROL;
   Delta[0,signo]:=4;
@@ -44,12 +45,13 @@ Begin
     EstadoActual:=Delta[EstadoActual,CarASimb(X)];
     I:=I+1;
     IF (ESTADOACTUAL = 1) OR (ESTADOACTUAL = 2)  THEN
-      LEXEMA:= LEXEMA + X;
+      LEXEMA_AUX:= LEXEMA_AUX + X;
     END;
   IF EstadoActual in F THEN
      BEGIN
        constanteREAL:= TRUE;
-       CONTROL:=I;
+       LEXEMA:=LEXEMA_AUX;
+       CONTROL:=I-1;
      end;
     end;
 

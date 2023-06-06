@@ -18,7 +18,8 @@ if not eof(arch) then
 begin
 leer_dato(ARCH,control,x);
  while(X in [#1..#32])  do
- BEGIN
+ BEGIN            
+writeln('salto');
  CONTROL:=CONTROL+1;
  leer_dato(ARCH,control,x);
  end;
@@ -56,7 +57,7 @@ Procedure Cargar_TS(var TS:T_LISTA);
 var X:T_DATO1;
 begin
 PRIMERO(TS);
-WHILE NOT LISTA_LLENA(TS) DO
+if NOT LISTA_LLENA(TS) then
 BEGIN
 X.LEXEMA:='PROGRAM';
 X.COMPLEX:='PROGRAMA';
@@ -85,13 +86,13 @@ VAR ENC:BOOLEAN;
 begin
 BUSCAR_L(TS, Lexema, ENC);
 if not enc and not lista_llena(TS)then
-begin
-SIGUIENTE(TS);
- X.LEXEMA:=Lexema;
-X.COMPLEX:=CompLex;
-AGREGAR(TS,X);
-end;
+  begin
+  SIGUIENTE(TS);
+  X.LEXEMA:=Lexema;
+  X.COMPLEX:=CompLex;
+  AGREGAR(TS,X);
   end;
+end;
 end.
 
 

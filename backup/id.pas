@@ -18,6 +18,7 @@ Var
   Delta:TipoDelta; X:CHAR; I:LONGINT;
 Begin
   I:=CONTROL;
+   Lexema:='';
   Delta[0,letra]:=1;
   Delta[0,digito]:=2;
   Delta[0,otro]:=2;
@@ -25,9 +26,6 @@ Begin
   Delta[1,digito]:=1;
   Delta[1,otro]:=3;
   EstadoActual:=q0;
- // seek(arch, control);
- // read(arch,dato);
- LEXEMA:= '';
   while (EstadoActual <> 3) and (EstadoActual <> 2) do
   begin
   leer_dato(ARCH,i,x);

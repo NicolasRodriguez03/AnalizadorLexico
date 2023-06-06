@@ -19,7 +19,6 @@ if  (not eof(arch)) then
    begin
 SEEK(ARCH, I);
 READ(ARCH, X);
-writeln('lee archivo');
    end
 ELSE
 X:=#0;

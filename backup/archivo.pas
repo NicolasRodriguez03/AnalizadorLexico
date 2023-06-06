@@ -18,7 +18,7 @@ begin
 if  (not eof(arch)) then
    begin
 SEEK(ARCH, I);
-READ(ARCH, X)
+READ(ARCH, X);
 writeln('lee archivo');
    end
 ELSE

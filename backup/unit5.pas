@@ -18,7 +18,8 @@ if not eof(arch) then
 begin
 leer_dato(ARCH,control,x);
  while(X in [#1..#32])  do
- BEGIN
+ BEGIN            
+writeln('salto');
  CONTROL:=CONTROL+1;
  leer_dato(ARCH,control,x);
  end;
@@ -46,7 +47,7 @@ else If ConstanteCADENA(ARCH,Control,Lexema) then
     end
 else if EsSimboloEspecial(ARCH,Control,Lexema,complex) then
      begin
-      complex:='SimboloEspecial'; 
+      //complex:='SimboloEspecial'; 
       InstalarEnTS(Lexema,TS,CompLex);
     end
 else complex:='Error Lexico'
@@ -56,7 +57,7 @@ Procedure Cargar_TS(var TS:T_LISTA);
 var X:T_DATO1;
 begin
 PRIMERO(TS);
-WHILE NOT LISTA_LLENA(TS) DO
+if NOT LISTA_LLENA(TS) then
 BEGIN
 X.LEXEMA:='PROGRAM';
 X.COMPLEX:='PROGRAMA';

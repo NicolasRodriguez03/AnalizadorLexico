@@ -18,8 +18,10 @@ Var
   EstadoActual:Q;
   Delta:TipoDelta;
   X:CHAR; I:LONGINT;
+  LEXEMA_AUX:STRING;
 Begin
   I:=CONTROL;
+  WRITELN('SSS');
   Delta[0,letra]:=3;
   Delta[0,digito]:=3;
   Delta[0,comilla]:=1;
@@ -34,13 +36,15 @@ Begin
   begin
     LEER_DATO(ARCH,I,X);
     EstadoActual:=Delta[EstadoActual,CarASimb(X)];
+    WRITELN(ESTADOACTUAL);
     I:=I+1;
     IF (ESTADOACTUAL = 1) or (ESTADOACTUAL = 2)  THEN
-      LEXEMA:= LEXEMA + X;
+      LEXEMA_AUX:= LEXEMA_AUX + X;
   END;
-  IF EstadoActual=F THEN
+  IF EstadoActual in F then
      BEGIN
       CONSTANTECADENA:= TRUE;
+      LEXEMA:=LEXEMA_AUX;
        CONTROL:=I-1;
      end;
 End;

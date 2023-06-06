@@ -20,7 +20,8 @@ Var
   Delta:TipoDelta;
   X:CHAR; I:LONGINT;
 Begin
-  I:=CONTROL;
+  I:=CONTROL;  
+   Lexema:='';
   Delta[0,signo]:=4;
   Delta[0,digito]:=1;
   Delta[0,punto]:=3;
@@ -41,7 +42,6 @@ Begin
   while (EstadoActual <> 3)  and (EstadoActual <> 5) do
     begin
      LEER_DATO(ARCH,I,X);
-     X:=#0;
     EstadoActual:=Delta[EstadoActual,CarASimb(X)];
     I:=I+1;
     IF (ESTADOACTUAL = 1) OR (ESTADOACTUAL = 2)  THEN

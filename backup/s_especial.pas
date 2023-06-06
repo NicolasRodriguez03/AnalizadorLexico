@@ -13,10 +13,10 @@ function EsSimboloEspecial(var arch:t_arch; var control:longint;var Lexema:strin
 VAR DATO:CHAR;
     i,x:longint;
 begin
-  i:=control;
+  i:=control;  
+   Lexema:='';
   leer_dato(ARCH,i,dato);
   EsSimboloEspecial:=false;
-  writeln(control);
   case  dato of
   '.' :  begin
     complex:='punto';
